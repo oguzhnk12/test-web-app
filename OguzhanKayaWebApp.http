@@ -1,0 +1,6 @@
+@OguzhanKayaWebApp_HostAddress = http://localhost:5032
+
+GET {{OguzhanKayaWebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
