@@ -5,14 +5,14 @@ using Microsoft.AspNetCore.Mvc;
 public class TestController : ControllerBase
 {
     // GET: api/test?name=Ahmet
-    [HttpGet]
+    [HttpGet("hello")]
     public IActionResult Get([FromQuery] string name)
     {
         return Ok($"Merhaba, {name ?? "Ziyaretçi"}!");
     }
 
     // POST: api/test
-    [HttpPost]
+    [HttpPost("welcome")]
     public IActionResult Post([FromBody] UserDto user)
     {
         return Ok($"Hoş geldin {user.FirstName} {user.LastName}, yaşın: {user.Age}");
